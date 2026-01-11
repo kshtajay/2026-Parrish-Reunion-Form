@@ -19,7 +19,7 @@
       --green-600:#059669;
       --green-500:#10b981;
 
-      --gold-600:#b45309;  /* deep amber */
+      --gold-600:#b45309;
       --gold-500:#d97706;
       --gold-400:#f59e0b;
       --gold-200:#fde68a;
@@ -56,6 +56,16 @@
       overflow: hidden;
       box-shadow: var(--shadow);
       border: 1px solid rgba(0,0,0,.04);
+    }
+
+    /* Honeypot - hidden from humans, visible to bots */
+    .hp-field {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
     }
 
     /* Header */
@@ -722,7 +732,7 @@
 
             <div class="expect-card">
               <div class="expect-icon" aria-hidden="true">🌙</div>
-              <div class="expect-text"><strong>Late-Night Laughs:</strong> Evenings filled with laughter, stories, and meaningful moments—bringing everyone together under the Tennessee sky..</div>
+              <div class="expect-text"><strong>Late-Night Laughs:</strong> Evenings filled with laughter, stories, and meaningful moments—bringing everyone together under the Tennessee sky.</div>
             </div>
           </div>
         </div>
@@ -759,7 +769,7 @@
               <path
                 d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
             </svg>
-            <a href="https://www.facebook.com/groups/330910967252768/?http_ref=eyJ0cyI6MTc2NzkxODExODAwMCwiciI6IiJ9" target="_blank" style="text-decoration:none; font-weight:900; color:#1877f2;">Parrish Family Reunion</a>
+            <a href="https://www.facebook.com/groups/330910967252768" target="_blank" style="text-decoration:none; font-weight:900; color:#1877f2;">Parrish Family Reunion</a>
           </div>
         </div>
       </div>
@@ -887,12 +897,91 @@
           </p>
         </div>
       </div>
+	  
+	  <!-- GETTING THERE (TRAVEL INFO) -->
+	<div class="section" id="getting-there">
+	<div class="section-title">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+		</svg>
+    Getting There (Travel Information)
+	</div>
+
+	<div class="info-box" style="background: linear-gradient(135deg, rgba(240,253,244,.90) 0%, rgba(255,251,235,.90) 100%); border:2px solid rgba(16,185,129,.20);">
+    <p style="color:var(--muted); line-height:1.85; font-size:15px; font-weight:600; margin:0 0 14px 0;">
+      To help everyone plan (especially those traveling from out of state), here's the easiest way to get to
+      <strong style="color:var(--green-800);">Gatlinburg, Tennessee</strong>.
+    </p>
+
+    <!-- Closest Airport Callout -->
+    <div class="callout" style="margin: 0 0 16px 0;">
+      <div class="date" style="font-size:20px;">✈️ Closest Airport</div>
+      <div class="location" style="font-size:18px;">
+        McGhee Tyson Airport (TYS) — Knoxville, TN
+      </div>
+      <p style="margin:10px 0 0 0; color:var(--muted); font-weight:700; line-height:1.7;">
+        Approx. <strong style="color:var(--green-800);">45–60 minutes</strong> to Gatlinburg by car (traffic/weather may affect travel time).
+      </p>
+    </div>
+
+    <!-- Two Column: Flying / Driving -->
+    <div class="form-row" style="margin-top: 6px;">
+      <!-- Flying -->
+      <div style="background:white; border-radius:12px; padding:18px; border:2px solid rgba(16,185,129,.18);">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+          <div class="expect-icon" aria-hidden="true" style="width:40px; height:40px;">🧳</div>
+          <div style="font-weight:900; color:var(--green-800); font-size:16px;">Flying In</div>
+        </div>
+
+        <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.8; font-weight:650;">
+          <li><strong style="color:var(--green-800);">Airport:</strong> TYS (Knoxville)</li>
+          <li><strong style="color:var(--green-800);">Best option:</strong> Rent a car at the airport</li>
+          <li><strong style="color:var(--green-800);">Rideshare:</strong> Uber/Lyft available (limited late night)</li>
+          <li><strong style="color:var(--green-800);">Heads up:</strong> mountain roads are winding—drive carefully at night or in bad weather</li>
+        </ul>
+      </div>
+
+      <!-- Driving -->
+      <div style="background:white; border-radius:12px; padding:18px; border:2px solid rgba(16,185,129,.18);">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+          <div class="expect-icon" aria-hidden="true" style="width:40px; height:40px;">🚗</div>
+          <div style="font-weight:900; color:var(--green-800); font-size:16px;">Driving In</div>
+        </div>
+
+        <div style="display:grid; gap:8px; color:var(--muted); font-weight:700;">
+          <div style="display:flex; justify-content:space-between; border-bottom:1px solid rgba(16,185,129,.18); padding:8px 0;">
+            <span>Knoxville, TN</span><span style="color:var(--gold-600); font-weight:900;">~ 1 hr</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; border-bottom:1px solid rgba(16,185,129,.18); padding:8px 0;">
+            <span>Asheville, NC</span><span style="color:var(--gold-600); font-weight:900;">~ 2 hrs</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; border-bottom:1px solid rgba(16,185,129,.18); padding:8px 0;">
+            <span>Atlanta, GA</span><span style="color:var(--gold-600); font-weight:900;">~ 4 hrs</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding:8px 0;">
+            <span>Nashville, TN</span><span style="color:var(--gold-600); font-weight:900;">~ 4 hrs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Travel Tips -->
+    <div class="memories" style="margin-top:16px;">
+      <h3>Travel Tips</h3>
+      <p>
+        Gatlinburg is a mountain town — expect winding roads, occasional traffic in peak seasons, and limited downtown parking.
+        Plan a little extra time so you can arrive stress-free.
+      </p>
+    </div>
+	</div>
+	</div>
 
       <!-- REGISTRATION FORM HEADER -->
       <div class="registration-header">
         <h2>Registration Form</h2>
         <div class="deadline-info">
-          <div class="hard-deadline">Deadline: May 15th, 2026</div>
+          <div class="hard-deadline">Registration Open Through: May 15th, 2026</div>
           <div class="early-bird-active">🎉 Early Bird Pricing Ends: March 20th, 2026</div>
         </div>
       </div>
@@ -901,12 +990,18 @@
 
       <form id="registrationForm">
 
+        <!-- HONEYPOT (Bot Trap) - DO NOT REMOVE -->
+        <div class="hp-field">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
         <!-- PRICING -->
         <div class="section">
           <div class="section-title">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 11-18 0 9 9 0 0118 0z"></path>
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             Registration Pricing
           </div>
@@ -915,7 +1010,8 @@
             <label for="pricingPhase">Choose Pricing</label>
             <select id="pricingPhase" name="pricingPhase">
               <option value="EARLY_BIRD">Early Bird (ends March 20th, 2026)</option>
-              <option value="REGULAR">Regular Registration</option>
+              <option value="REGULAR">Regular Registration (March 21st - May 15th)</option>
+              <option value="LATE">Late Registration (After May 15th)</option>
             </select>
             <div id="earlyBirdNote" class="pricing-note" style="display:none;">
               Early Bird pricing has ended. Regular Registration is now available.
@@ -923,9 +1019,10 @@
           </div>
 
           <div style="margin-top:16px; padding:16px; background:white; border-radius:12px; border:2px solid rgba(16,185,129,.18);">
-            <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:16px; font-size:14px;">
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; font-size:13px;">
+              <!-- Early Bird - Green -->
               <div>
-                <strong style="color:var(--green-800);">Early Bird Pricing</strong>
+                <strong style="color:var(--green-800);">🎉 Early Bird</strong>
                 <div style="margin-top:8px; color:var(--muted); line-height:1.7; font-weight:600;">
                   Adults (21+): $110<br>
                   Teens & Young Adults (13–20): $65<br>
@@ -933,12 +1030,25 @@
                   Children (5 & under): Free
                 </div>
               </div>
+              
+              <!-- Regular - Gold -->
               <div>
-                <strong style="color:#b91c1c;">Regular Pricing</strong>
+                <strong style="color:#b45309;">📅 Regular Pricing</strong>
                 <div style="margin-top:8px; color:var(--muted); line-height:1.7; font-weight:600;">
                   Adults (21+): $130<br>
                   Teens & Young Adults (13–20): $75<br>
-                  Children (6–12): $20<br>
+                  Children (6–12): $25<br>
+                  Children (5 & under): Free
+                </div>
+              </div>
+              
+              <!-- Late Registration - Red -->
+              <div>
+                <strong style="color:#b91c1c;">⚠️ Late Registration</strong>
+                <div style="margin-top:8px; color:var(--muted); line-height:1.7; font-weight:600;">
+                  Adults (21+): $180<br>
+                  Teens & Young Adults (13–20): $85<br>
+                  Children (6–12): $35<br>
                   Children (5 & under): Free
                 </div>
               </div>
@@ -1022,7 +1132,7 @@
 
             <div class="attendee-box">
               <div class="attendee-label">Children (6–12)</div>
-              <div class="attendee-price">$20</div>
+              <div class="attendee-price" id="child-price">$20</div>
               <input type="number" id="children" name="children" min="0" value="0" onchange="calculateTotal()">
             </div>
 
@@ -1031,6 +1141,38 @@
               <div class="attendee-price">Free</div>
               <input type="number" id="babies" name="babies" min="0" value="0" onchange="calculateTotal()">
             </div>
+          </div>
+        </div>
+
+        <!-- DIETARY RESTRICTIONS -->
+        <div class="section">
+          <div class="section-title">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+            </svg>
+            Dietary Restrictions & Allergies
+          </div>
+
+          <div style="background: linear-gradient(135deg, rgba(240,253,244,.90) 0%, rgba(255,251,235,.90) 100%); 
+                      border: 2px solid rgba(16,185,129,.20); border-radius: 14px; padding: 20px; margin-bottom: 18px;">
+            <p style="margin: 0 0 12px 0; color: var(--muted); font-weight: 600; line-height: 1.75; font-size: 15px;">
+              <strong style="color: var(--green-800);">🍽️ Help Us Serve You Better</strong><br>
+              Let us know about any food allergies, dietary restrictions, or special meal requirements for your group.
+            </p>
+            <p style="margin: 0; color: #6b7280; font-size: 13px; font-weight: 600; line-height: 1.6;">
+              <em>Examples: Vegetarian, Vegan, Gluten-free, Nut allergy, Dairy-free, Kosher, Halal, etc.</em>
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="dietaryRestrictions">Dietary Restrictions <span style="color: #6b7280; font-weight: 600;">(Optional)</span></label>
+            <textarea 
+              id="dietaryRestrictions" 
+              name="dietaryRestrictions" 
+              placeholder="Please list any food allergies, dietary restrictions, or special meal requirements for your group..."
+              style="min-height: 100px;"
+            ></textarea>
           </div>
         </div>
 
@@ -1047,18 +1189,10 @@
           <!-- Preview -->
           <div style="text-align:center; margin-bottom:26px; background:white; padding:20px; border-radius:14px; border:2px solid rgba(16,185,129,.18);">
             <img
-              src="https://lh3.googleusercontent.com/d/1NjbQG9vm4nr08fpz_GFXzjFHI5kSqLUS"
+              src="https://lh3.googleusercontent.com/d/1Ch_uNsJSju-ZaHnzbIhDhnF8apWKOGSO"
               alt="2026 Parrish Family Reunion T-Shirt Design"
               style="max-width:100%; height:auto; max-height:420px; border-radius:14px; box-shadow:0 8px 16px rgba(0,0,0,0.10);"
-              onerror="this.onerror=null; this.src='https://drive.google.com/thumbnail?id=1NjbQG9vm4nr08fpz_GFXzjFHI5kSqLUS&sz=w1000'; setTimeout(() => { if(this.naturalWidth === 0) { this.style.display='none'; this.nextElementSibling.style.display='block'; }}, 2000);"
             >
-            <div style="display:none; padding:18px; background:rgba(254,243,199,.95); border-radius:12px; margin-top:10px; border:1px solid rgba(245,158,11,.35);">
-              <p style="margin:0; color:#92400e; font-weight:700; line-height:1.6;">
-                <strong>📧 T-Shirt Design Preview</strong><br>
-                If the image doesn’t load here, you can view it using the link below:<br>
-                <a href="https://drive.google.com/file/d/1NjbQG9vm4nr08fpz_GFXzjFHI5kSqLUS/view" target="_blank" style="color:var(--green-800); text-decoration: underline; font-weight:900;">View the design</a>
-              </p>
-            </div>
             <p style="margin-top:14px; font-weight:900; color:var(--green-800); font-size:16px;">2026 Parrish Family Reunion Official T-Shirt</p>
             <p style="margin:5px 0 0 0; font-size:14px; color:#6b7280; font-weight:600;">
               Available in two colors: <strong style="color:#111827;">Black</strong> or <strong style="color:var(--green-800);">Green</strong>
@@ -1181,7 +1315,7 @@
             <select id="paymentMethod" name="paymentMethod" required onchange="showPaymentInfo()">
               <option value="">Select payment method</option>
               <option value="Zelle">Zelle</option>
-              <option value="Money Order / Cashier's Check">Money Order / Cashier's Check</option>
+              <option value="Mail">Money Order / Cashier's Check (by Mail)</option>
             </select>
           </div>
 
@@ -1229,31 +1363,96 @@
 
   <script>
     // ===== CONFIGURATION =====
-    const SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzKPaOazRxcOpHdt0YJtzliTEGb7HIxAlf9wiOn9mpgT5iuEPu0X__XkTSw4piav4FsCQ/exec";
+    const SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzBMdwJ1PZWPmkXLkZYh1eRioKZU6Abm0LKrjIINWJU-tK1U_FKIOOEoHpoTYz_m8UTWQ/exec";
     const ZELLE_CONTACT = "(305) 898-3321";
     const EARLY_BIRD_END = new Date("2026-03-20T23:59:59");
+    const REGULAR_END = new Date("2026-05-15T23:59:59");
+
+    // ===== SANITY LIMITS =====
+    const SANITY = {
+      MAX_ATTENDEES_PER_TYPE: 30,
+      MAX_TOTAL_ATTENDEES: 100,
+      MAX_SHIRTS_PER_SIZE: 20,
+      MAX_TOTAL_SHIRTS: 50,
+      MAX_NAME_LENGTH: 200,
+      MAX_ADDRESS_LENGTH: 200,
+      MAX_DIETARY_LENGTH: 500,
+      MIN_SUBMISSION_INTERVAL: 3000
+    };
+
+    let lastSubmissionTime = 0;
 
     // ===== HELPER FUNCTIONS =====
     function isEarlyBirdAvailable() {
       return new Date() <= EARLY_BIRD_END;
     }
 
+    function isRegularAvailable() {
+      return new Date() <= REGULAR_END;
+    }
+
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+
+    function validatePhone(phone) {
+      const digits = phone.replace(/\D/g, '');
+      return digits.length === 10;
+    }
+
+    function sanitizeInput(input, maxLength) {
+      return String(input).trim().slice(0, maxLength);
+    }
+
+    function clamp(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+
     function updatePricing() {
       const phase = document.getElementById('pricingPhase').value;
-      const isEarlyBird = phase === 'EARLY_BIRD';
+      
+      let adultPrice, teenPrice, childPrice;
+      
+      if (phase === 'EARLY_BIRD') {
+        adultPrice = '$110';
+        teenPrice = '$65';
+        childPrice = '$20';
+      } else if (phase === 'LATE') {
+        adultPrice = '$180';
+        teenPrice = '$85';
+        childPrice = '$35';
+      } else { // REGULAR
+        adultPrice = '$130';
+        teenPrice = '$75';
+        childPrice = '$20';
+      }
 
-      document.getElementById('adult-price').textContent = isEarlyBird ? '$110' : '$130';
-      document.getElementById('teen-price').textContent = isEarlyBird ? '$65' : '$75';
+      document.getElementById('adult-price').textContent = adultPrice;
+      document.getElementById('teen-price').textContent = teenPrice;
+      document.getElementById('child-price').textContent = childPrice;
 
       calculateTotal();
     }
 
     function calculateTotal() {
       const phase = document.getElementById('pricingPhase').value;
-      const isEarlyBird = phase === 'EARLY_BIRD';
-      const adultRate = isEarlyBird ? 110 : 130;
-      const teenRate  = isEarlyBird ? 65 : 75;
-      const childRate = 20;
+      
+      let adultRate, teenRate, childRate;
+      
+      if (phase === 'EARLY_BIRD') {
+        adultRate = 110;
+        teenRate = 65;
+        childRate = 20;
+      } else if (phase === 'LATE') {
+        adultRate = 180;
+        teenRate = 85;
+        childRate = 35;
+      } else { // REGULAR
+        adultRate = 130;
+        teenRate = 75;
+        childRate = 20;
+      }
 
       const adults = parseInt(document.getElementById('adults').value || 0);
       const adolescents = parseInt(document.getElementById('adolescents').value || 0);
@@ -1354,58 +1553,166 @@
       document.getElementById('message').className = 'message';
     }
 
+    function validateForm(data) {
+      const honeypot = document.getElementById('website').value;
+      if (honeypot && honeypot.trim() !== '') {
+        return { valid: false, message: 'Spam detected.' };
+      }
+
+      const now = Date.now();
+      if (now - lastSubmissionTime < SANITY.MIN_SUBMISSION_INTERVAL) {
+        return { valid: false, message: 'Please wait a moment before submitting again.' };
+      }
+
+      if (!data.names || data.names.length === 0) {
+        return { valid: false, message: 'Please enter at least one name.' };
+      }
+
+      if (data.names.length > SANITY.MAX_NAME_LENGTH) {
+        return { valid: false, message: 'Names field is too long.' };
+      }
+
+      if (!validateEmail(data.email)) {
+        return { valid: false, message: 'Please enter a valid email address.' };
+      }
+
+      if (!validatePhone(data.phone)) {
+        return { valid: false, message: 'Please enter a valid 10-digit phone number.' };
+      }
+
+      if (data.address.length > SANITY.MAX_ADDRESS_LENGTH) {
+        return { valid: false, message: 'Address is too long.' };
+      }
+
+      if (data.adults > SANITY.MAX_ATTENDEES_PER_TYPE ||
+          data.adolescents > SANITY.MAX_ATTENDEES_PER_TYPE ||
+          data.children > SANITY.MAX_ATTENDEES_PER_TYPE ||
+          data.babies > SANITY.MAX_ATTENDEES_PER_TYPE) {
+        return { valid: false, message: 'Attendee count exceeds maximum allowed per category.' };
+      }
+
+      const totalAttendees = data.adults + data.adolescents + data.children + data.babies;
+      if (totalAttendees === 0) {
+        return { valid: false, message: 'Please add at least one attendee.' };
+      }
+
+      if (totalAttendees > SANITY.MAX_TOTAL_ATTENDEES) {
+        return { valid: false, message: 'Total attendee count exceeds maximum allowed.' };
+      }
+
+      const shirtFields = [
+        'adultXS_black', 'adultS_black', 'adultM_black', 'adultL_black',
+        'adultXL_black', 'adult2X_black', 'adult3X_black', 'adult4X_black',
+        'adultXS_green', 'adultS_green', 'adultM_green', 'adultL_green',
+        'adultXL_green', 'adult2X_green', 'adult3X_green', 'adult4X_green',
+        'teenS_black', 'teenM_black', 'teenL_black',
+        'teenS_green', 'teenM_green', 'teenL_green',
+        'childXS_black', 'childS_black', 'childM_black', 'childL_black',
+        'childXS_green', 'childS_green', 'childM_green', 'childL_green'
+      ];
+
+      let totalShirts = 0;
+      for (const field of shirtFields) {
+        const qty = data[field];
+        if (qty > SANITY.MAX_SHIRTS_PER_SIZE) {
+          return { valid: false, message: 'Shirt quantity per size exceeds maximum allowed.' };
+        }
+        totalShirts += qty;
+      }
+
+      if (totalShirts > SANITY.MAX_TOTAL_SHIRTS) {
+        return { valid: false, message: 'Total shirt quantity exceeds maximum allowed.' };
+      }
+
+      // Total verification
+      let adultRate, teenRate, childRate;
+      
+      if (data.pricingPhase === 'EARLY_BIRD') {
+        adultRate = 110;
+        teenRate = 65;
+        childRate = 20;
+      } else if (data.pricingPhase === 'LATE') {
+        adultRate = 180;
+        teenRate = 85;
+        childRate = 35;
+      } else {
+        adultRate = 130;
+        teenRate = 75;
+        childRate = 20;
+      }
+
+      const expectedRegFees = data.adults * adultRate + data.adolescents * teenRate + data.children * childRate;
+      
+      const adultShirtCount = data.adultXS_black + data.adultS_black + data.adultM_black + data.adultL_black +
+                             data.adultXL_black + data.adult2X_black + data.adult3X_black + data.adult4X_black +
+                             data.adultXS_green + data.adultS_green + data.adultM_green + data.adultL_green +
+                             data.adultXL_green + data.adult2X_green + data.adult3X_green + data.adult4X_green;
+      
+      const teenShirtCount = data.teenS_black + data.teenM_black + data.teenL_black +
+                            data.teenS_green + data.teenM_green + data.teenL_green;
+      
+      const childShirtCount = data.childXS_black + data.childS_black + data.childM_black + data.childL_black +
+                             data.childXS_green + data.childS_green + data.childM_green + data.childL_green;
+      
+      const expectedShirtFees = adultShirtCount * 25 + teenShirtCount * 15 + childShirtCount * 7;
+      const expectedTotal = expectedRegFees + expectedShirtFees;
+
+      if (Math.abs(expectedTotal - data.total) > 0.01) {
+        return { valid: false, message: 'Total calculation mismatch. Please refresh the page and try again.' };
+      }
+
+      return { valid: true };
+    }
+
     function getFormData() {
       return {
         pricingPhase: document.getElementById('pricingPhase').value,
-        names: document.getElementById('names').value.trim(),
-        address: document.getElementById('address').value.trim(),
-        cityStateZip: document.getElementById('cityStateZip').value.trim(),
-        email: document.getElementById('email').value.trim(),
+        names: sanitizeInput(document.getElementById('names').value, SANITY.MAX_NAME_LENGTH),
+        address: sanitizeInput(document.getElementById('address').value, SANITY.MAX_ADDRESS_LENGTH),
+        cityStateZip: sanitizeInput(document.getElementById('cityStateZip').value, 120),
+        email: document.getElementById('email').value.trim().toLowerCase(),
         phone: document.getElementById('phone').value.trim(),
         familyBranch: document.getElementById('familyBranch').value,
+        dietaryRestrictions: sanitizeInput(document.getElementById('dietaryRestrictions').value, SANITY.MAX_DIETARY_LENGTH),
 
-        adults: parseInt(document.getElementById('adults').value || 0),
-        adolescents: parseInt(document.getElementById('adolescents').value || 0),
-        children: parseInt(document.getElementById('children').value || 0),
-        babies: parseInt(document.getElementById('babies').value || 0),
+        adults: clamp(parseInt(document.getElementById('adults').value || 0), 0, SANITY.MAX_ATTENDEES_PER_TYPE),
+        adolescents: clamp(parseInt(document.getElementById('adolescents').value || 0), 0, SANITY.MAX_ATTENDEES_PER_TYPE),
+        children: clamp(parseInt(document.getElementById('children').value || 0), 0, SANITY.MAX_ATTENDEES_PER_TYPE),
+        babies: clamp(parseInt(document.getElementById('babies').value || 0), 0, SANITY.MAX_ATTENDEES_PER_TYPE),
 
-        // Adult shirts - Black
-        adultXS_black: parseInt(document.getElementById('adultXS_black').value || 0),
-        adultS_black:  parseInt(document.getElementById('adultS_black').value  || 0),
-        adultM_black:  parseInt(document.getElementById('adultM_black').value  || 0),
-        adultL_black:  parseInt(document.getElementById('adultL_black').value  || 0),
-        adultXL_black: parseInt(document.getElementById('adultXL_black').value || 0),
-        adult2X_black: parseInt(document.getElementById('adult2X_black').value || 0),
-        adult3X_black: parseInt(document.getElementById('adult3X_black').value || 0),
-        adult4X_black: parseInt(document.getElementById('adult4X_black').value || 0),
+        adultXS_black: clamp(parseInt(document.getElementById('adultXS_black').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adultS_black:  clamp(parseInt(document.getElementById('adultS_black').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adultM_black:  clamp(parseInt(document.getElementById('adultM_black').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adultL_black:  clamp(parseInt(document.getElementById('adultL_black').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adultXL_black: clamp(parseInt(document.getElementById('adultXL_black').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adult2X_black: clamp(parseInt(document.getElementById('adult2X_black').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adult3X_black: clamp(parseInt(document.getElementById('adult3X_black').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adult4X_black: clamp(parseInt(document.getElementById('adult4X_black').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
 
-        // Adult shirts - Green
-        adultXS_green: parseInt(document.getElementById('adultXS_green').value || 0),
-        adultS_green:  parseInt(document.getElementById('adultS_green').value  || 0),
-        adultM_green:  parseInt(document.getElementById('adultM_green').value  || 0),
-        adultL_green:  parseInt(document.getElementById('adultL_green').value  || 0),
-        adultXL_green: parseInt(document.getElementById('adultXL_green').value || 0),
-        adult2X_green: parseInt(document.getElementById('adult2X_green').value || 0),
-        adult3X_green: parseInt(document.getElementById('adult3X_green').value || 0),
-        adult4X_green: parseInt(document.getElementById('adult4X_green').value || 0),
+        adultXS_green: clamp(parseInt(document.getElementById('adultXS_green').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adultS_green:  clamp(parseInt(document.getElementById('adultS_green').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adultM_green:  clamp(parseInt(document.getElementById('adultM_green').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adultL_green:  clamp(parseInt(document.getElementById('adultL_green').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adultXL_green: clamp(parseInt(document.getElementById('adultXL_green').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adult2X_green: clamp(parseInt(document.getElementById('adult2X_green').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adult3X_green: clamp(parseInt(document.getElementById('adult3X_green').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        adult4X_green: clamp(parseInt(document.getElementById('adult4X_green').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
 
-        // Teen shirts
-        teenS_black: parseInt(document.getElementById('teenS_black').value || 0),
-        teenM_black: parseInt(document.getElementById('teenM_black').value || 0),
-        teenL_black: parseInt(document.getElementById('teenL_black').value || 0),
-        teenS_green: parseInt(document.getElementById('teenS_green').value || 0),
-        teenM_green: parseInt(document.getElementById('teenM_green').value || 0),
-        teenL_green: parseInt(document.getElementById('teenL_green').value || 0),
+        teenS_black: clamp(parseInt(document.getElementById('teenS_black').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        teenM_black: clamp(parseInt(document.getElementById('teenM_black').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        teenL_black: clamp(parseInt(document.getElementById('teenL_black').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        teenS_green: clamp(parseInt(document.getElementById('teenS_green').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        teenM_green: clamp(parseInt(document.getElementById('teenM_green').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        teenL_green: clamp(parseInt(document.getElementById('teenL_green').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
 
-        // Child shirts
-        childXS_black: parseInt(document.getElementById('childXS_black').value || 0),
-        childS_black:  parseInt(document.getElementById('childS_black').value  || 0),
-        childM_black:  parseInt(document.getElementById('childM_black').value  || 0),
-        childL_black:  parseInt(document.getElementById('childL_black').value  || 0),
-        childXS_green: parseInt(document.getElementById('childXS_green').value || 0),
-        childS_green:  parseInt(document.getElementById('childS_green').value  || 0),
-        childM_green:  parseInt(document.getElementById('childM_green').value  || 0),
-        childL_green:  parseInt(document.getElementById('childL_green').value  || 0),
+        childXS_black: clamp(parseInt(document.getElementById('childXS_black').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        childS_black:  clamp(parseInt(document.getElementById('childS_black').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        childM_black:  clamp(parseInt(document.getElementById('childM_black').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        childL_black:  clamp(parseInt(document.getElementById('childL_black').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        childXS_green: clamp(parseInt(document.getElementById('childXS_green').value || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        childS_green:  clamp(parseInt(document.getElementById('childS_green').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        childM_green:  clamp(parseInt(document.getElementById('childM_green').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
+        childL_green:  clamp(parseInt(document.getElementById('childL_green').value  || 0), 0, SANITY.MAX_SHIRTS_PER_SIZE),
 
         paymentMethod: document.getElementById('paymentMethod').value
       };
@@ -1423,9 +1730,18 @@
         return;
       }
 
+      // Auto-adjust pricing phase based on date
+      const today = new Date();
       if (formData.pricingPhase === 'EARLY_BIRD' && !isEarlyBirdAvailable()) {
-        showMessage('⚠ Early Bird pricing ended on March 20, 2026. Please use Regular Registration.', 'error');
+        showMessage('⚠ Early Bird pricing has ended. Switching to Regular pricing.', 'error');
         document.getElementById('pricingPhase').value = 'REGULAR';
+        updatePricing();
+        return;
+      }
+
+      if (formData.pricingPhase === 'REGULAR' && !isRegularAvailable()) {
+        showMessage('⚠ Regular pricing has ended. Switching to Late Registration.', 'error');
+        document.getElementById('pricingPhase').value = 'LATE';
         updatePricing();
         return;
       }
@@ -1434,14 +1750,26 @@
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<span class="loading"></span>Submitting...';
 
-      const isEarlyBird = formData.pricingPhase === 'EARLY_BIRD';
-      const adultRate = isEarlyBird ? 110 : 130;
-      const teenRate  = isEarlyBird ? 65 : 75;
+      let adultRate, teenRate, childRate;
+      
+      if (formData.pricingPhase === 'EARLY_BIRD') {
+        adultRate = 110;
+        teenRate = 65;
+        childRate = 20;
+      } else if (formData.pricingPhase === 'LATE') {
+        adultRate = 180;
+        teenRate = 85;
+        childRate = 35;
+      } else {
+        adultRate = 130;
+        teenRate = 75;
+        childRate = 20;
+      }
 
       const registrationFees =
         formData.adults * adultRate +
         formData.adolescents * teenRate +
-        formData.children * 20;
+        formData.children * childRate;
 
       const adultShirts =
         formData.adultXS_black + formData.adultS_black + formData.adultM_black + formData.adultL_black +
@@ -1458,18 +1786,33 @@
         formData.childXS_green + formData.childS_green + formData.childM_green + formData.childL_green;
 
       const shirtFees = adultShirts * 25 + teenShirts * 15 + childShirts * 7;
+      const total = registrationFees + shirtFees;
 
       const payload = {
         action: 'submit',
+        hp: '',
         ...formData,
         registrationFees,
         shirtFees,
-        total: registrationFees + shirtFees,
+        total,
         submittedAt: new Date().toISOString()
       };
 
+      const validation = validateForm(payload);
+      if (!validation.valid) {
+        showMessage('⚠ ' + validation.message, 'error');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+          </svg>
+          Submit Registration
+        `;
+        return;
+      }
+
       try {
-        // IMPORTANT: text/plain avoids common CORS preflight issues for Apps Script web apps
         const response = await fetch(SHEETS_WEBAPP_URL, {
           method: 'POST',
           headers: { "Content-Type": "text/plain;charset=utf-8" },
@@ -1479,6 +1822,8 @@
         const result = await response.json();
 
         if (result.ok) {
+          lastSubmissionTime = Date.now();
+          
           const submittedEmail = document.getElementById('email').value;
           const submittedDate = new Date().toLocaleString();
 
@@ -1529,7 +1874,6 @@
     document.getElementById('registrationForm').addEventListener('submit', handleSubmit);
     document.getElementById('pricingPhase').addEventListener('change', updatePricing);
 
-    // Phone formatting
     document.getElementById('phone').addEventListener('input', (e) => {
       let value = e.target.value.replace(/\D/g, '');
       if (value.length > 0) {
@@ -1541,9 +1885,22 @@
     });
 
     // ===== INITIALIZATION =====
-    if (!isEarlyBirdAvailable()) {
+    const today = new Date();
+    
+    if (today > REGULAR_END) {
+      // Late Registration period (After May 15)
+      document.getElementById('pricingPhase').value = 'LATE';
+      document.getElementById('pricingPhase').options[0].disabled = true;
+      document.getElementById('pricingPhase').options[1].disabled = true;
+      document.getElementById('earlyBirdNote').textContent = 'Late Registration period is active (After May 15, 2026).';
+      document.getElementById('earlyBirdNote').style.display = 'block';
+      const eb = document.querySelector('.early-bird-active');
+      if (eb) eb.style.display = 'none';
+    } else if (!isEarlyBirdAvailable()) {
+      // Regular period (March 21 - May 15)
       document.getElementById('pricingPhase').value = 'REGULAR';
       document.getElementById('pricingPhase').options[0].disabled = true;
+      document.getElementById('earlyBirdNote').textContent = 'Early Bird pricing has ended. Regular Registration is now available.';
       document.getElementById('earlyBirdNote').style.display = 'block';
       const eb = document.querySelector('.early-bird-active');
       if (eb) eb.style.display = 'none';
