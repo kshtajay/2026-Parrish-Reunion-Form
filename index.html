@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting to Parrish Family Reunion 2026...</title>
     
-    <!-- Instant redirect -->
+    <!-- INSTANT REDIRECT TO NETLIFY -->
     <meta http-equiv="refresh" content="0; url=https://parrish-reunion-2026.netlify.app">
     
-    <!-- For search engines -->
+    <!-- Tell search engines about the new location -->
     <link rel="canonical" href="https://parrish-reunion-2026.netlify.app">
     
     <style>
@@ -28,32 +28,27 @@
             padding: 20px;
         }
         
-        .redirect-container {
+        .redirect-box {
             background: white;
             border-radius: 16px;
-            padding: 40px;
-            max-width: 500px;
+            padding: 50px 40px;
+            max-width: 600px;
             text-align: center;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
             color: #15803d;
-            font-size: 24px;
+            font-size: 28px;
             margin-bottom: 20px;
+            font-weight: 700;
         }
         
-        p {
-            color: #374151;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        
-        .spinner {
-            width: 50px;
-            height: 50px;
-            margin: 20px auto;
-            border: 4px solid #d1fae5;
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            margin: 30px auto;
+            border: 5px solid #d1fae5;
             border-top-color: #15803d;
             border-radius: 50%;
             animation: spin 1s linear infinite;
@@ -63,29 +58,65 @@
             to { transform: rotate(360deg); }
         }
         
-        a {
-            color: #15803d;
-            text-decoration: none;
-            font-weight: 600;
+        p {
+            color: #374151;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 16px;
         }
         
-        a:hover {
-            text-decoration: underline;
+        .manual-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #15803d;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .manual-link:hover {
+            background: #166534;
+        }
+        
+        .note {
+            margin-top: 30px;
+            padding: 15px;
+            background: #f0fdf4;
+            border-left: 4px solid #15803d;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #166534;
         }
     </style>
     
     <script>
-        // JavaScript redirect (backup in case meta refresh fails)
-        window.location.href = "https://parrish-reunion-2026.netlify.app";
+        // Backup JavaScript redirect (in case meta refresh doesn't work)
+        window.location.replace("https://parrish-reunion-2026.netlify.app");
     </script>
 </head>
 <body>
-    <div class="redirect-container">
+    <div class="redirect-box">
         <h1>🎉 Parrish Family Reunion 2026</h1>
-        <div class="spinner"></div>
-        <p>Redirecting you to our registration page...</p>
-        <p>If you are not redirected automatically, please click the link below:</p>
-        <p><a href="https://parrish-reunion-2026.netlify.app">Click here to continue to registration</a></p>
+        
+        <div class="loading-spinner"></div>
+        
+        <p><strong>Redirecting you to our registration page...</strong></p>
+        
+        <p>You're being automatically forwarded to our new site:</p>
+        <p style="color: #15803d; font-weight: 600;">parrish-reunion-2026.netlify.app</p>
+        
+        <p style="margin-top: 30px;">If you are not redirected within 3 seconds, please click below:</p>
+        
+        <a href="https://parrish-reunion-2026.netlify.app" class="manual-link">
+            Go to Registration Form →
+        </a>
+        
+        <div class="note">
+            💡 <strong>Note:</strong> Please bookmark our new address for faster access in the future!
+        </div>
     </div>
 </body>
 </html>
